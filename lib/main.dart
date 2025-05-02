@@ -1,3 +1,4 @@
+import 'package:chat_app_firebase_push_notification/screens/auth.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,10 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Scaffold(
-        appBar: AppBar(title: Text("Chat App")),
-        body: Center(child: Text("Chat App")),
-      ),
+      home: AuthScreen(),
     );
   }
 }
