@@ -40,9 +40,24 @@ class _AuthScreenState extends State<AuthScreen> {
                               labelText: "Email Address",
                             ),
                             keyboardType: TextInputType.emailAddress,
+                            autocorrect: false,
+                            textCapitalization: TextCapitalization.none,
                           ),
+
                           TextFormField(
                             decoration: InputDecoration(labelText: "Password"),
+                            obscureText: true,
+                          ),
+
+                          SizedBox(height: 12),
+
+                          ElevatedButton(
+                            onPressed: () {},
+                            child: Text("Signup"),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("Create an account"),
                           ),
                         ],
                       ),
